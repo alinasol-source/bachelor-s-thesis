@@ -1,0 +1,384 @@
+INFO - 06/05/22 01:11:56 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/05/22 01:11:56 - 0:00:00 - adversarial: True
+                                     batch_size: 32
+                                     cuda: False
+                                     dico_build: S2T
+                                     dico_eval: default
+                                     dico_max_rank: 15000
+                                     dico_max_size: 0
+                                     dico_method: csls_knn_10
+                                     dico_min_size: 0
+                                     dico_threshold: 0
+                                     dis_clip_weights: 0
+                                     dis_dropout: 0.0
+                                     dis_hid_dim: 2048
+                                     dis_input_dropout: 0.1
+                                     dis_lambda: 1
+                                     dis_layers: 2
+                                     dis_most_frequent: 75000
+                                     dis_optimizer: sgd,lr=0.1
+                                     dis_smooth: 0.1
+                                     dis_steps: 5
+                                     emb_dim: 300
+                                     epoch_size: 100000
+                                     exp_id: 
+                                     exp_name: debug
+                                     exp_path: C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw
+                                     export: txt
+                                     lr_decay: 0.98
+                                     lr_shrink: 0.5
+                                     map_beta: 0.001
+                                     map_id_init: True
+                                     map_optimizer: sgd,lr=0.1
+                                     max_vocab: 200000
+                                     min_lr: 1e-06
+                                     n_epochs: 3
+                                     n_refinement: 3
+                                     normalize_embeddings: 
+                                     seed: -1
+                                     src_emb: data/wiki.en.vec
+                                     src_lang: en
+                                     tgt_emb: data/wiki.ru.vec
+                                     tgt_lang: ru
+                                     verbose: 2
+INFO - 06/05/22 01:11:56 - 0:00:00 - The experiment will be stored in C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw
+INFO - 06/05/22 01:12:16 - 0:00:20 - Loaded 200000 pre-trained word embeddings.
+INFO - 06/05/22 01:12:37 - 0:00:41 - Loaded 200000 pre-trained word embeddings.
+INFO - 06/05/22 01:12:38 - 0:00:42 - ----> ADVERSARIAL TRAINING <----
+                                     
+                                     
+INFO - 06/05/22 01:12:38 - 0:00:42 - Starting adversarial training epoch 0...
+INFO - 06/05/22 01:12:38 - 0:00:42 - 000000 - Discriminator loss: 0.6812 - 204 samples/s
+INFO - 06/05/22 01:13:02 - 0:01:05 - 004000 - Discriminator loss: 0.6078 - 346 samples/s
+INFO - 06/05/22 01:13:27 - 0:01:31 - 008000 - Discriminator loss: 0.4967 - 312 samples/s
+INFO - 06/05/22 01:13:53 - 0:01:57 - 012000 - Discriminator loss: 0.5345 - 310 samples/s
+INFO - 06/05/22 01:14:18 - 0:02:21 - 016000 - Discriminator loss: 0.5339 - 324 samples/s
+INFO - 06/05/22 01:14:42 - 0:02:46 - 020000 - Discriminator loss: 0.5379 - 325 samples/s
+INFO - 06/05/22 01:15:06 - 0:03:10 - 024000 - Discriminator loss: 0.5173 - 328 samples/s
+INFO - 06/05/22 01:15:31 - 0:03:35 - 028000 - Discriminator loss: 0.4976 - 327 samples/s
+INFO - 06/05/22 01:15:54 - 0:03:58 - 032000 - Discriminator loss: 0.4852 - 343 samples/s
+INFO - 06/05/22 01:16:18 - 0:04:22 - 036000 - Discriminator loss: 0.4716 - 335 samples/s
+INFO - 06/05/22 01:16:43 - 0:04:47 - 040000 - Discriminator loss: 0.4646 - 316 samples/s
+INFO - 06/05/22 01:17:08 - 0:05:11 - 044000 - Discriminator loss: 0.4583 - 330 samples/s
+INFO - 06/05/22 01:17:32 - 0:05:36 - 048000 - Discriminator loss: 0.4453 - 326 samples/s
+INFO - 06/05/22 01:17:55 - 0:05:59 - 052000 - Discriminator loss: 0.4401 - 341 samples/s
+INFO - 06/05/22 01:18:19 - 0:06:23 - 056000 - Discriminator loss: 0.4389 - 334 samples/s
+INFO - 06/05/22 01:18:44 - 0:06:47 - 060000 - Discriminator loss: 0.4303 - 330 samples/s
+INFO - 06/05/22 01:19:07 - 0:07:11 - 064000 - Discriminator loss: 0.4273 - 337 samples/s
+INFO - 06/05/22 01:19:32 - 0:07:35 - 068000 - Discriminator loss: 0.4211 - 328 samples/s
+INFO - 06/05/22 01:19:55 - 0:07:59 - 072000 - Discriminator loss: 0.4165 - 337 samples/s
+INFO - 06/05/22 01:20:19 - 0:08:23 - 076000 - Discriminator loss: 0.4094 - 340 samples/s
+INFO - 06/05/22 01:20:44 - 0:08:48 - 080000 - Discriminator loss: 0.4109 - 318 samples/s
+INFO - 06/05/22 01:21:08 - 0:09:11 - 084000 - Discriminator loss: 0.4093 - 337 samples/s
+INFO - 06/05/22 01:21:32 - 0:09:36 - 088000 - Discriminator loss: 0.4067 - 325 samples/s
+INFO - 06/05/22 01:21:56 - 0:10:00 - 092000 - Discriminator loss: 0.4004 - 336 samples/s
+INFO - 06/05/22 01:22:21 - 0:10:24 - 096000 - Discriminator loss: 0.3999 - 324 samples/s
+INFO - 06/05/22 01:22:45 - 0:10:49 - ====================================================================
+INFO - 06/05/22 01:22:45 - 0:10:49 -                        Dataset      Found     Not found          Rho
+INFO - 06/05/22 01:22:45 - 0:10:49 - ====================================================================
+INFO - 06/05/22 01:22:45 - 0:10:49 -                       EN_MC-30          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                   EN_MEN-TR-3k          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                   EN_MTurk-287          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                   EN_MTurk-771          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                       EN_RG-65          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                 EN_RW-STANFORD          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                   EN_SEMEVAL17        379             9       0.7123
+INFO - 06/05/22 01:22:45 - 0:10:49 -                  EN_SIMLEX-999          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                    EN_VERB-143          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                  EN_WS-353-ALL          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                  EN_WS-353-REL          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                  EN_WS-353-SIM          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 -                      EN_YP-130          0             1          nan
+INFO - 06/05/22 01:22:45 - 0:10:49 - ====================================================================
+INFO - 06/05/22 01:22:45 - 0:10:49 - Monolingual source word similarity score average: nan
+INFO - 06/05/22 01:22:46 - 0:10:49 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 01:23:45 - 0:11:49 - 5000 source words - nn - Precision at k = 1: 0.020000
+INFO - 06/05/22 01:23:45 - 0:11:49 - 5000 source words - nn - Precision at k = 5: 0.120000
+INFO - 06/05/22 01:23:45 - 0:11:49 - 5000 source words - nn - Precision at k = 10: 0.200000
+INFO - 06/05/22 01:23:46 - 0:11:50 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 01:30:57 - 0:19:00 - 5000 source words - csls_knn_10 - Precision at k = 1: 0.080000
+INFO - 06/05/22 01:30:57 - 0:19:01 - 5000 source words - csls_knn_10 - Precision at k = 5: 0.160000
+INFO - 06/05/22 01:30:57 - 0:19:01 - 5000 source words - csls_knn_10 - Precision at k = 10: 0.240000
+INFO - 06/05/22 01:31:56 - 0:20:00 - Building the train dictionary ...
+INFO - 06/05/22 01:31:56 - 0:20:00 - New train dictionary of 2334 pairs.
+INFO - 06/05/22 01:31:56 - 0:20:00 - Mean cosine (nn method, S2T build, 10000 max size): 0.51606
+INFO - 06/05/22 01:40:39 - 0:28:43 - Building the train dictionary ...
+INFO - 06/05/22 01:40:39 - 0:28:43 - New train dictionary of 1481 pairs.
+INFO - 06/05/22 01:40:39 - 0:28:43 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.49479
+INFO - 06/05/22 01:41:28 - 0:29:32 - Discriminator source / target predictions: 0.83484 / 0.18315
+INFO - 06/05/22 01:41:28 - 0:29:32 - Discriminator source / target / global accuracy: 0.98338 / 0.94125 / 0.96232
+INFO - 06/05/22 01:41:28 - 0:29:32 - __log__:{"n_epoch": 0, "src_ws_monolingual_scores": NaN, "src_EN_MC-30": NaN, "src_EN_MEN-TR-3k": NaN, "src_EN_MTurk-287": NaN, "src_EN_MTurk-771": NaN, "src_EN_RG-65": NaN, "src_EN_RW-STANFORD": NaN, "src_EN_SEMEVAL17": 0.7123160776408977, "src_EN_SIMLEX-999": NaN, "src_EN_VERB-143": NaN, "src_EN_WS-353-ALL": NaN, "src_EN_WS-353-REL": NaN, "src_EN_WS-353-SIM": NaN, "src_EN_YP-130": NaN, "precision_at_1-nn": 0.02, "precision_at_5-nn": 0.12, "precision_at_10-nn": 0.2, "precision_at_1-csls_knn_10": 0.08, "precision_at_5-csls_knn_10": 0.16, "precision_at_10-csls_knn_10": 0.24, "mean_cosine-nn-S2T-10000": 0.5160592794418335, "mean_cosine-csls_knn_10-S2T-10000": 0.49478963017463684, "dis_accu": 0.96232, "dis_src_pred": 0.834835499165263, "dis_tgt_pred": 0.18314984302996629}
+INFO - 06/05/22 01:41:28 - 0:29:32 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.49479
+INFO - 06/05/22 01:41:28 - 0:29:32 - * Saving the mapping to C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\best_mapping.pth ...
+INFO - 06/05/22 01:41:29 - 0:29:32 - End of epoch 0.
+                                     
+                                     
+INFO - 06/05/22 01:41:29 - 0:29:32 - Decreasing learning rate: 0.10000000 -> 0.09800000
+INFO - 06/05/22 01:41:29 - 0:29:32 - Starting adversarial training epoch 1...
+INFO - 06/05/22 01:41:29 - 0:29:33 - 000000 - Discriminator loss: 0.3934 - 285 samples/s
+INFO - 06/05/22 01:41:54 - 0:29:58 - 004000 - Discriminator loss: 0.3997 - 319 samples/s
+INFO - 06/05/22 01:42:21 - 0:30:25 - 008000 - Discriminator loss: 0.3978 - 295 samples/s
+INFO - 06/05/22 01:42:45 - 0:30:49 - 012000 - Discriminator loss: 0.3969 - 328 samples/s
+INFO - 06/05/22 01:43:10 - 0:31:14 - 016000 - Discriminator loss: 0.3943 - 318 samples/s
+INFO - 06/05/22 01:43:35 - 0:31:39 - 020000 - Discriminator loss: 0.3942 - 322 samples/s
+INFO - 06/05/22 01:44:03 - 0:32:06 - 024000 - Discriminator loss: 0.3903 - 290 samples/s
+INFO - 06/05/22 01:44:27 - 0:32:31 - 028000 - Discriminator loss: 0.3912 - 332 samples/s
+INFO - 06/05/22 01:44:51 - 0:32:55 - 032000 - Discriminator loss: 0.3899 - 331 samples/s
+INFO - 06/05/22 01:45:15 - 0:33:19 - 036000 - Discriminator loss: 0.3906 - 329 samples/s
+INFO - 06/05/22 01:45:39 - 0:33:43 - 040000 - Discriminator loss: 0.3883 - 331 samples/s
+INFO - 06/05/22 01:46:06 - 0:34:10 - 044000 - Discriminator loss: 0.3893 - 301 samples/s
+INFO - 06/05/22 01:46:31 - 0:34:35 - 048000 - Discriminator loss: 0.3882 - 321 samples/s
+INFO - 06/05/22 01:46:56 - 0:35:00 - 052000 - Discriminator loss: 0.3876 - 318 samples/s
+INFO - 06/05/22 01:47:21 - 0:35:25 - 056000 - Discriminator loss: 0.3864 - 321 samples/s
+INFO - 06/05/22 01:47:46 - 0:35:50 - 060000 - Discriminator loss: 0.3845 - 320 samples/s
+INFO - 06/05/22 01:48:11 - 0:36:14 - 064000 - Discriminator loss: 0.3823 - 322 samples/s
+INFO - 06/05/22 01:48:36 - 0:36:40 - 068000 - Discriminator loss: 0.3802 - 313 samples/s
+INFO - 06/05/22 01:49:02 - 0:37:05 - 072000 - Discriminator loss: 0.3821 - 313 samples/s
+INFO - 06/05/22 01:49:27 - 0:37:31 - 076000 - Discriminator loss: 0.3799 - 317 samples/s
+INFO - 06/05/22 01:49:51 - 0:37:54 - 080000 - Discriminator loss: 0.3782 - 335 samples/s
+INFO - 06/05/22 01:50:14 - 0:38:18 - 084000 - Discriminator loss: 0.3781 - 346 samples/s
+INFO - 06/05/22 01:50:39 - 0:38:43 - 088000 - Discriminator loss: 0.3779 - 318 samples/s
+INFO - 06/05/22 01:51:04 - 0:39:08 - 092000 - Discriminator loss: 0.3779 - 315 samples/s
+INFO - 06/05/22 01:51:29 - 0:39:33 - 096000 - Discriminator loss: 0.3785 - 324 samples/s
+INFO - 06/05/22 01:51:54 - 0:39:58 - ====================================================================
+INFO - 06/05/22 01:51:54 - 0:39:58 -                        Dataset      Found     Not found          Rho
+INFO - 06/05/22 01:51:54 - 0:39:58 - ====================================================================
+INFO - 06/05/22 01:51:54 - 0:39:58 -                       EN_MC-30          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                   EN_MEN-TR-3k          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                   EN_MTurk-287          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                   EN_MTurk-771          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                       EN_RG-65          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                 EN_RW-STANFORD          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                   EN_SEMEVAL17        379             9       0.7069
+INFO - 06/05/22 01:51:54 - 0:39:58 -                  EN_SIMLEX-999          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                    EN_VERB-143          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                  EN_WS-353-ALL          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                  EN_WS-353-REL          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                  EN_WS-353-SIM          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 -                      EN_YP-130          0             1          nan
+INFO - 06/05/22 01:51:54 - 0:39:58 - ====================================================================
+INFO - 06/05/22 01:51:54 - 0:39:58 - Monolingual source word similarity score average: nan
+INFO - 06/05/22 01:51:55 - 0:39:59 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 01:52:56 - 0:41:00 - 5000 source words - nn - Precision at k = 1: 0.060000
+INFO - 06/05/22 01:52:56 - 0:41:00 - 5000 source words - nn - Precision at k = 5: 0.180000
+INFO - 06/05/22 01:52:56 - 0:41:00 - 5000 source words - nn - Precision at k = 10: 0.360000
+INFO - 06/05/22 01:52:58 - 0:41:01 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 01:58:45 - 0:46:49 - 5000 source words - csls_knn_10 - Precision at k = 1: 0.080000
+INFO - 06/05/22 01:58:45 - 0:46:49 - 5000 source words - csls_knn_10 - Precision at k = 5: 0.320000
+INFO - 06/05/22 01:58:45 - 0:46:49 - 5000 source words - csls_knn_10 - Precision at k = 10: 0.580000
+INFO - 06/05/22 01:59:43 - 0:47:46 - Building the train dictionary ...
+INFO - 06/05/22 01:59:43 - 0:47:46 - New train dictionary of 2304 pairs.
+INFO - 06/05/22 01:59:43 - 0:47:46 - Mean cosine (nn method, S2T build, 10000 max size): 0.53455
+INFO - 06/05/22 02:08:51 - 0:56:55 - Building the train dictionary ...
+INFO - 06/05/22 02:08:51 - 0:56:55 - New train dictionary of 1520 pairs.
+INFO - 06/05/22 02:08:51 - 0:56:55 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.50948
+INFO - 06/05/22 02:09:34 - 0:57:38 - Discriminator source / target predictions: 0.83649 / 0.15642
+INFO - 06/05/22 02:09:34 - 0:57:38 - Discriminator source / target / global accuracy: 0.98612 / 0.95685 / 0.97149
+INFO - 06/05/22 02:09:34 - 0:57:38 - __log__:{"n_epoch": 1, "src_ws_monolingual_scores": NaN, "src_EN_MC-30": NaN, "src_EN_MEN-TR-3k": NaN, "src_EN_MTurk-287": NaN, "src_EN_MTurk-771": NaN, "src_EN_RG-65": NaN, "src_EN_RW-STANFORD": NaN, "src_EN_SEMEVAL17": 0.706851976629107, "src_EN_SIMLEX-999": NaN, "src_EN_VERB-143": NaN, "src_EN_WS-353-ALL": NaN, "src_EN_WS-353-REL": NaN, "src_EN_WS-353-SIM": NaN, "src_EN_YP-130": NaN, "precision_at_1-nn": 0.06, "precision_at_5-nn": 0.18, "precision_at_10-nn": 0.36, "precision_at_1-csls_knn_10": 0.08, "precision_at_5-csls_knn_10": 0.32, "precision_at_10-csls_knn_10": 0.58, "mean_cosine-nn-S2T-10000": 0.5345529317855835, "mean_cosine-csls_knn_10-S2T-10000": 0.509484589099884, "dis_accu": 0.971485, "dis_src_pred": 0.8364936706056446, "dis_tgt_pred": 0.1564190956108844}
+INFO - 06/05/22 02:09:34 - 0:57:38 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.50948
+INFO - 06/05/22 02:09:34 - 0:57:38 - * Saving the mapping to C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\best_mapping.pth ...
+INFO - 06/05/22 02:09:34 - 0:57:38 - End of epoch 1.
+                                     
+                                     
+INFO - 06/05/22 02:09:34 - 0:57:38 - Decreasing learning rate: 0.09800000 -> 0.09604000
+INFO - 06/05/22 02:09:34 - 0:57:38 - Starting adversarial training epoch 2...
+INFO - 06/05/22 02:09:34 - 0:57:38 - 000000 - Discriminator loss: 0.3675 - 292 samples/s
+INFO - 06/05/22 02:09:57 - 0:58:01 - 004000 - Discriminator loss: 0.3778 - 349 samples/s
+INFO - 06/05/22 02:10:20 - 0:58:24 - 008000 - Discriminator loss: 0.3773 - 351 samples/s
+INFO - 06/05/22 02:10:43 - 0:58:47 - 012000 - Discriminator loss: 0.3791 - 351 samples/s
+INFO - 06/05/22 02:11:06 - 0:59:09 - 016000 - Discriminator loss: 0.3772 - 351 samples/s
+INFO - 06/05/22 02:11:28 - 0:59:32 - 020000 - Discriminator loss: 0.3757 - 351 samples/s
+INFO - 06/05/22 02:11:51 - 0:59:55 - 024000 - Discriminator loss: 0.3756 - 353 samples/s
+INFO - 06/05/22 02:12:14 - 1:00:17 - 028000 - Discriminator loss: 0.3769 - 352 samples/s
+INFO - 06/05/22 02:12:36 - 1:00:40 - 032000 - Discriminator loss: 0.3763 - 353 samples/s
+INFO - 06/05/22 02:12:59 - 1:01:03 - 036000 - Discriminator loss: 0.3763 - 352 samples/s
+INFO - 06/05/22 02:13:22 - 1:01:26 - 040000 - Discriminator loss: 0.3774 - 350 samples/s
+INFO - 06/05/22 02:13:45 - 1:01:48 - 044000 - Discriminator loss: 0.3759 - 350 samples/s
+INFO - 06/05/22 02:14:07 - 1:02:11 - 048000 - Discriminator loss: 0.3747 - 352 samples/s
+INFO - 06/05/22 02:14:30 - 1:02:34 - 052000 - Discriminator loss: 0.3754 - 349 samples/s
+INFO - 06/05/22 02:14:53 - 1:02:57 - 056000 - Discriminator loss: 0.3755 - 351 samples/s
+INFO - 06/05/22 02:15:17 - 1:03:21 - 060000 - Discriminator loss: 0.3743 - 332 samples/s
+INFO - 06/05/22 02:15:41 - 1:03:45 - 064000 - Discriminator loss: 0.3728 - 337 samples/s
+INFO - 06/05/22 02:16:04 - 1:04:07 - 068000 - Discriminator loss: 0.3742 - 351 samples/s
+INFO - 06/05/22 02:16:26 - 1:04:30 - 072000 - Discriminator loss: 0.3737 - 351 samples/s
+INFO - 06/05/22 02:16:49 - 1:04:53 - 076000 - Discriminator loss: 0.3731 - 351 samples/s
+INFO - 06/05/22 02:17:12 - 1:05:16 - 080000 - Discriminator loss: 0.3726 - 350 samples/s
+INFO - 06/05/22 02:17:35 - 1:05:38 - 084000 - Discriminator loss: 0.3722 - 351 samples/s
+INFO - 06/05/22 02:17:57 - 1:06:01 - 088000 - Discriminator loss: 0.3732 - 352 samples/s
+INFO - 06/05/22 02:18:20 - 1:06:24 - 092000 - Discriminator loss: 0.3722 - 352 samples/s
+INFO - 06/05/22 02:18:43 - 1:06:46 - 096000 - Discriminator loss: 0.3724 - 354 samples/s
+INFO - 06/05/22 02:19:05 - 1:07:09 - ====================================================================
+INFO - 06/05/22 02:19:05 - 1:07:09 -                        Dataset      Found     Not found          Rho
+INFO - 06/05/22 02:19:05 - 1:07:09 - ====================================================================
+INFO - 06/05/22 02:19:05 - 1:07:09 -                       EN_MC-30          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                   EN_MEN-TR-3k          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                   EN_MTurk-287          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                   EN_MTurk-771          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                       EN_RG-65          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                 EN_RW-STANFORD          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                   EN_SEMEVAL17        379             9       0.7108
+INFO - 06/05/22 02:19:05 - 1:07:09 -                  EN_SIMLEX-999          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                    EN_VERB-143          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                  EN_WS-353-ALL          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                  EN_WS-353-REL          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                  EN_WS-353-SIM          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 -                      EN_YP-130          0             1          nan
+INFO - 06/05/22 02:19:05 - 1:07:09 - ====================================================================
+INFO - 06/05/22 02:19:05 - 1:07:09 - Monolingual source word similarity score average: nan
+INFO - 06/05/22 02:19:06 - 1:07:10 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 02:19:56 - 1:08:00 - 5000 source words - nn - Precision at k = 1: 0.080000
+INFO - 06/05/22 02:19:56 - 1:08:00 - 5000 source words - nn - Precision at k = 5: 0.300000
+INFO - 06/05/22 02:19:56 - 1:08:00 - 5000 source words - nn - Precision at k = 10: 0.600000
+INFO - 06/05/22 02:19:58 - 1:08:01 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 02:25:31 - 1:13:34 - 5000 source words - csls_knn_10 - Precision at k = 1: 0.260000
+INFO - 06/05/22 02:25:31 - 1:13:35 - 5000 source words - csls_knn_10 - Precision at k = 5: 0.640000
+INFO - 06/05/22 02:25:31 - 1:13:35 - 5000 source words - csls_knn_10 - Precision at k = 10: 0.980000
+INFO - 06/05/22 02:26:26 - 1:14:30 - Building the train dictionary ...
+INFO - 06/05/22 02:26:26 - 1:14:30 - New train dictionary of 2504 pairs.
+INFO - 06/05/22 02:26:26 - 1:14:30 - Mean cosine (nn method, S2T build, 10000 max size): 0.53324
+INFO - 06/05/22 02:34:58 - 1:23:02 - Building the train dictionary ...
+INFO - 06/05/22 02:34:58 - 1:23:02 - New train dictionary of 1703 pairs.
+INFO - 06/05/22 02:34:58 - 1:23:02 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.51212
+INFO - 06/05/22 02:35:45 - 1:23:49 - Discriminator source / target predictions: 0.82837 / 0.13459
+INFO - 06/05/22 02:35:45 - 1:23:49 - Discriminator source / target / global accuracy: 0.98170 / 0.96498 / 0.97334
+INFO - 06/05/22 02:35:45 - 1:23:49 - __log__:{"n_epoch": 2, "src_ws_monolingual_scores": NaN, "src_EN_MC-30": NaN, "src_EN_MEN-TR-3k": NaN, "src_EN_MTurk-287": NaN, "src_EN_MTurk-771": NaN, "src_EN_RG-65": NaN, "src_EN_RW-STANFORD": NaN, "src_EN_SEMEVAL17": 0.7108133478649269, "src_EN_SIMLEX-999": NaN, "src_EN_VERB-143": NaN, "src_EN_WS-353-ALL": NaN, "src_EN_WS-353-REL": NaN, "src_EN_WS-353-SIM": NaN, "src_EN_YP-130": NaN, "precision_at_1-nn": 0.08, "precision_at_5-nn": 0.3, "precision_at_10-nn": 0.6, "precision_at_1-csls_knn_10": 0.26, "precision_at_5-csls_knn_10": 0.64, "precision_at_10-csls_knn_10": 0.98, "mean_cosine-nn-S2T-10000": 0.5332373380661011, "mean_cosine-csls_knn_10-S2T-10000": 0.5121188163757324, "dis_accu": 0.97334, "dis_src_pred": 0.828374214742221, "dis_tgt_pred": 0.1345948302671856}
+INFO - 06/05/22 02:35:45 - 1:23:49 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.51212
+INFO - 06/05/22 02:35:45 - 1:23:49 - * Saving the mapping to C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\best_mapping.pth ...
+INFO - 06/05/22 02:35:45 - 1:23:49 - End of epoch 2.
+                                     
+                                     
+INFO - 06/05/22 02:35:45 - 1:23:49 - Decreasing learning rate: 0.09604000 -> 0.09411920
+INFO - 06/05/22 02:35:45 - 1:23:49 - ----> ITERATIVE PROCRUSTES REFINEMENT <----
+                                     
+                                     
+INFO - 06/05/22 02:35:45 - 1:23:49 - * Reloading the best model from C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\best_mapping.pth ...
+INFO - 06/05/22 02:35:45 - 1:23:49 - Starting refinement iteration 0...
+INFO - 06/05/22 02:35:45 - 1:23:49 - Building the train dictionary ...
+INFO - 06/05/22 02:40:06 - 1:28:10 - New train dictionary of 2739 pairs.
+INFO - 06/05/22 02:40:07 - 1:28:10 - ====================================================================
+INFO - 06/05/22 02:40:07 - 1:28:10 -                        Dataset      Found     Not found          Rho
+INFO - 06/05/22 02:40:07 - 1:28:10 - ====================================================================
+INFO - 06/05/22 02:40:07 - 1:28:10 -                       EN_MC-30          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                   EN_MEN-TR-3k          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                   EN_MTurk-287          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                   EN_MTurk-771          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                       EN_RG-65          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                 EN_RW-STANFORD          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                   EN_SEMEVAL17        379             9       0.7216
+INFO - 06/05/22 02:40:07 - 1:28:10 -                  EN_SIMLEX-999          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                    EN_VERB-143          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                  EN_WS-353-ALL          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                  EN_WS-353-REL          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                  EN_WS-353-SIM          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 -                      EN_YP-130          0             1          nan
+INFO - 06/05/22 02:40:07 - 1:28:10 - ====================================================================
+INFO - 06/05/22 02:40:07 - 1:28:10 - Monolingual source word similarity score average: nan
+INFO - 06/05/22 02:40:07 - 1:28:11 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 02:41:02 - 1:29:06 - 5000 source words - nn - Precision at k = 1: 0.360000
+INFO - 06/05/22 02:41:02 - 1:29:06 - 5000 source words - nn - Precision at k = 5: 0.800000
+INFO - 06/05/22 02:41:02 - 1:29:06 - 5000 source words - nn - Precision at k = 10: 1.220000
+INFO - 06/05/22 02:41:03 - 1:29:07 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 02:48:28 - 1:36:32 - 5000 source words - csls_knn_10 - Precision at k = 1: 0.360000
+INFO - 06/05/22 02:48:28 - 1:36:32 - 5000 source words - csls_knn_10 - Precision at k = 5: 1.080000
+INFO - 06/05/22 02:48:28 - 1:36:32 - 5000 source words - csls_knn_10 - Precision at k = 10: 1.640000
+INFO - 06/05/22 02:49:41 - 1:37:44 - Building the train dictionary ...
+INFO - 06/05/22 02:49:41 - 1:37:44 - New train dictionary of 4155 pairs.
+INFO - 06/05/22 02:49:41 - 1:37:44 - Mean cosine (nn method, S2T build, 10000 max size): 0.52493
+INFO - 06/05/22 03:01:40 - 1:49:44 - Building the train dictionary ...
+INFO - 06/05/22 03:01:40 - 1:49:44 - New train dictionary of 2749 pairs.
+INFO - 06/05/22 03:01:40 - 1:49:44 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.53373
+INFO - 06/05/22 03:01:40 - 1:49:44 - __log__:{"n_iter": 0, "src_ws_monolingual_scores": NaN, "src_EN_MC-30": NaN, "src_EN_MEN-TR-3k": NaN, "src_EN_MTurk-287": NaN, "src_EN_MTurk-771": NaN, "src_EN_RG-65": NaN, "src_EN_RW-STANFORD": NaN, "src_EN_SEMEVAL17": 0.7215995249434355, "src_EN_SIMLEX-999": NaN, "src_EN_VERB-143": NaN, "src_EN_WS-353-ALL": NaN, "src_EN_WS-353-REL": NaN, "src_EN_WS-353-SIM": NaN, "src_EN_YP-130": NaN, "precision_at_1-nn": 0.36, "precision_at_5-nn": 0.8, "precision_at_10-nn": 1.22, "precision_at_1-csls_knn_10": 0.36, "precision_at_5-csls_knn_10": 1.08, "precision_at_10-csls_knn_10": 1.6400000000000001, "mean_cosine-nn-S2T-10000": 0.5249313116073608, "mean_cosine-csls_knn_10-S2T-10000": 0.5337324142456055}
+INFO - 06/05/22 03:01:40 - 1:49:44 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.53373
+INFO - 06/05/22 03:01:40 - 1:49:44 - * Saving the mapping to C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\best_mapping.pth ...
+INFO - 06/05/22 03:01:40 - 1:49:44 - End of refinement iteration 0.
+                                     
+                                     
+INFO - 06/05/22 03:01:40 - 1:49:44 - Starting refinement iteration 1...
+INFO - 06/05/22 03:01:41 - 1:49:45 - Building the train dictionary ...
+INFO - 06/05/22 03:07:50 - 1:55:54 - New train dictionary of 4921 pairs.
+INFO - 06/05/22 03:07:50 - 1:55:54 - ====================================================================
+INFO - 06/05/22 03:07:50 - 1:55:54 -                        Dataset      Found     Not found          Rho
+INFO - 06/05/22 03:07:50 - 1:55:54 - ====================================================================
+INFO - 06/05/22 03:07:50 - 1:55:54 -                       EN_MC-30          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                   EN_MEN-TR-3k          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                   EN_MTurk-287          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                   EN_MTurk-771          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                       EN_RG-65          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                 EN_RW-STANFORD          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                   EN_SEMEVAL17        379             9       0.7216
+INFO - 06/05/22 03:07:50 - 1:55:54 -                  EN_SIMLEX-999          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                    EN_VERB-143          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                  EN_WS-353-ALL          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                  EN_WS-353-REL          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                  EN_WS-353-SIM          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 -                      EN_YP-130          0             1          nan
+INFO - 06/05/22 03:07:50 - 1:55:54 - ====================================================================
+INFO - 06/05/22 03:07:51 - 1:55:54 - Monolingual source word similarity score average: nan
+INFO - 06/05/22 03:07:51 - 1:55:55 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 03:08:46 - 1:56:50 - 5000 source words - nn - Precision at k = 1: 0.360000
+INFO - 06/05/22 03:08:46 - 1:56:50 - 5000 source words - nn - Precision at k = 5: 0.880000
+INFO - 06/05/22 03:08:46 - 1:56:50 - 5000 source words - nn - Precision at k = 10: 1.440000
+INFO - 06/05/22 03:08:47 - 1:56:50 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 03:17:28 - 2:05:31 - 5000 source words - csls_knn_10 - Precision at k = 1: 0.300000
+INFO - 06/05/22 03:17:28 - 2:05:32 - 5000 source words - csls_knn_10 - Precision at k = 5: 0.940000
+INFO - 06/05/22 03:17:28 - 2:05:32 - 5000 source words - csls_knn_10 - Precision at k = 10: 1.660000
+INFO - 06/05/22 03:18:24 - 2:06:28 - Building the train dictionary ...
+INFO - 06/05/22 03:18:24 - 2:06:28 - New train dictionary of 4782 pairs.
+INFO - 06/05/22 03:18:24 - 2:06:28 - Mean cosine (nn method, S2T build, 10000 max size): 0.53652
+INFO - 06/05/22 03:26:55 - 2:14:59 - Building the train dictionary ...
+INFO - 06/05/22 03:26:55 - 2:14:59 - New train dictionary of 3230 pairs.
+INFO - 06/05/22 03:26:55 - 2:14:59 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.54554
+INFO - 06/05/22 03:26:55 - 2:14:59 - __log__:{"n_iter": 1, "src_ws_monolingual_scores": NaN, "src_EN_MC-30": NaN, "src_EN_MEN-TR-3k": NaN, "src_EN_MTurk-287": NaN, "src_EN_MTurk-771": NaN, "src_EN_RG-65": NaN, "src_EN_RW-STANFORD": NaN, "src_EN_SEMEVAL17": 0.7215995249434355, "src_EN_SIMLEX-999": NaN, "src_EN_VERB-143": NaN, "src_EN_WS-353-ALL": NaN, "src_EN_WS-353-REL": NaN, "src_EN_WS-353-SIM": NaN, "src_EN_YP-130": NaN, "precision_at_1-nn": 0.36, "precision_at_5-nn": 0.88, "precision_at_10-nn": 1.44, "precision_at_1-csls_knn_10": 0.3, "precision_at_5-csls_knn_10": 0.9400000000000001, "precision_at_10-csls_knn_10": 1.66, "mean_cosine-nn-S2T-10000": 0.536517322063446, "mean_cosine-csls_knn_10-S2T-10000": 0.5455443859100342}
+INFO - 06/05/22 03:26:55 - 2:14:59 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.54554
+INFO - 06/05/22 03:26:55 - 2:14:59 - * Saving the mapping to C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\best_mapping.pth ...
+INFO - 06/05/22 03:26:55 - 2:14:59 - End of refinement iteration 1.
+                                     
+                                     
+INFO - 06/05/22 03:26:55 - 2:14:59 - Starting refinement iteration 2...
+INFO - 06/05/22 03:26:56 - 2:15:00 - Building the train dictionary ...
+INFO - 06/05/22 03:31:37 - 2:19:41 - New train dictionary of 6033 pairs.
+INFO - 06/05/22 03:31:38 - 2:19:42 - ====================================================================
+INFO - 06/05/22 03:31:38 - 2:19:42 -                        Dataset      Found     Not found          Rho
+INFO - 06/05/22 03:31:38 - 2:19:42 - ====================================================================
+INFO - 06/05/22 03:31:38 - 2:19:42 -                       EN_MC-30          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                   EN_MEN-TR-3k          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                   EN_MTurk-287          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                   EN_MTurk-771          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                       EN_RG-65          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                 EN_RW-STANFORD          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                   EN_SEMEVAL17        379             9       0.7216
+INFO - 06/05/22 03:31:38 - 2:19:42 -                  EN_SIMLEX-999          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                    EN_VERB-143          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                  EN_WS-353-ALL          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                  EN_WS-353-REL          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                  EN_WS-353-SIM          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 -                      EN_YP-130          0             1          nan
+INFO - 06/05/22 03:31:38 - 2:19:42 - ====================================================================
+INFO - 06/05/22 03:31:38 - 2:19:42 - Monolingual source word similarity score average: nan
+INFO - 06/05/22 03:31:39 - 2:19:42 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 03:32:23 - 2:20:27 - 5000 source words - nn - Precision at k = 1: 0.400000
+INFO - 06/05/22 03:32:23 - 2:20:27 - 5000 source words - nn - Precision at k = 5: 1.160000
+INFO - 06/05/22 03:32:23 - 2:20:27 - 5000 source words - nn - Precision at k = 10: 1.500000
+INFO - 06/05/22 03:32:24 - 2:20:28 - Found 10887 pairs of words in the dictionary (5000 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 06/05/22 03:40:00 - 2:28:04 - 5000 source words - csls_knn_10 - Precision at k = 1: 0.440000
+INFO - 06/05/22 03:40:00 - 2:28:04 - 5000 source words - csls_knn_10 - Precision at k = 5: 1.220000
+INFO - 06/05/22 03:40:00 - 2:28:04 - 5000 source words - csls_knn_10 - Precision at k = 10: 1.820000
+INFO - 06/05/22 03:41:07 - 2:29:11 - Building the train dictionary ...
+INFO - 06/05/22 03:41:07 - 2:29:11 - New train dictionary of 5062 pairs.
+INFO - 06/05/22 03:41:07 - 2:29:11 - Mean cosine (nn method, S2T build, 10000 max size): 0.54398
+INFO - 06/05/22 03:52:55 - 2:40:59 - Building the train dictionary ...
+INFO - 06/05/22 03:52:55 - 2:40:59 - New train dictionary of 3573 pairs.
+INFO - 06/05/22 03:52:55 - 2:40:59 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.55183
+INFO - 06/05/22 03:52:55 - 2:40:59 - __log__:{"n_iter": 2, "src_ws_monolingual_scores": NaN, "src_EN_MC-30": NaN, "src_EN_MEN-TR-3k": NaN, "src_EN_MTurk-287": NaN, "src_EN_MTurk-771": NaN, "src_EN_RG-65": NaN, "src_EN_RW-STANFORD": NaN, "src_EN_SEMEVAL17": 0.7215995249434355, "src_EN_SIMLEX-999": NaN, "src_EN_VERB-143": NaN, "src_EN_WS-353-ALL": NaN, "src_EN_WS-353-REL": NaN, "src_EN_WS-353-SIM": NaN, "src_EN_YP-130": NaN, "precision_at_1-nn": 0.4, "precision_at_5-nn": 1.16, "precision_at_10-nn": 1.5, "precision_at_1-csls_knn_10": 0.44, "precision_at_5-csls_knn_10": 1.22, "precision_at_10-csls_knn_10": 1.82, "mean_cosine-nn-S2T-10000": 0.5439820885658264, "mean_cosine-csls_knn_10-S2T-10000": 0.5518312454223633}
+INFO - 06/05/22 03:52:55 - 2:40:59 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.55183
+INFO - 06/05/22 03:52:55 - 2:40:59 - * Saving the mapping to C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\best_mapping.pth ...
+INFO - 06/05/22 03:52:55 - 2:40:59 - End of refinement iteration 2.
+                                     
+                                     
+INFO - 06/05/22 03:52:55 - 2:40:59 - * Reloading the best model from C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\best_mapping.pth ...
+INFO - 06/05/22 03:52:55 - 2:40:59 - Reloading all embeddings for mapping ...
+INFO - 06/05/22 03:53:16 - 2:41:20 - Loaded 200000 pre-trained word embeddings.
+INFO - 06/05/22 03:53:38 - 2:41:41 - Loaded 200000 pre-trained word embeddings.
+INFO - 06/05/22 03:53:38 - 2:41:42 - Map source embeddings to the target space ...
+INFO - 06/05/22 03:53:39 - 2:41:42 - Writing source embeddings to C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\vectors-en.txt ...
+INFO - 06/05/22 03:55:22 - 2:43:26 - Writing target embeddings to C:\Users\79648\Desktop\MUSE\dumped\debug\7d2foebeuw\vectors-ru.txt ...

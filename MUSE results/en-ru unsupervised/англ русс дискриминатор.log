@@ -1,0 +1,320 @@
+INFO - 02/27/22 17:37:56 - 0:00:00 - ============ Initialized logger ============
+INFO - 02/27/22 17:37:56 - 0:00:00 - adversarial: True
+                                     batch_size: 16
+                                     cuda: False
+                                     dico_build: S2T
+                                     dico_eval: default
+                                     dico_max_rank: 15000
+                                     dico_max_size: 0
+                                     dico_method: csls_knn_10
+                                     dico_min_size: 0
+                                     dico_threshold: 0
+                                     dis_clip_weights: 0
+                                     dis_dropout: 0.0
+                                     dis_hid_dim: 2048
+                                     dis_input_dropout: 0.1
+                                     dis_lambda: 1
+                                     dis_layers: 2
+                                     dis_most_frequent: 75000
+                                     dis_optimizer: sgd,lr=0.1
+                                     dis_smooth: 0.1
+                                     dis_steps: 5
+                                     emb_dim: 300
+                                     epoch_size: 10000
+                                     exp_id: 
+                                     exp_name: debug
+                                     exp_path: C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx
+                                     export: txt
+                                     lr_decay: 0.98
+                                     lr_shrink: 0.5
+                                     map_beta: 0.001
+                                     map_id_init: True
+                                     map_optimizer: sgd,lr=0.1
+                                     max_vocab: 200000
+                                     min_lr: 1e-06
+                                     n_epochs: 5
+                                     n_refinement: 5
+                                     normalize_embeddings: 
+                                     seed: -1
+                                     src_emb: MUSE/data/wiki.en.vec
+                                     src_lang: en
+                                     tgt_emb: MUSE/data/wiki.ru.vec
+                                     tgt_lang: ru
+                                     verbose: 2
+INFO - 02/27/22 17:37:56 - 0:00:00 - The experiment will be stored in C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx
+INFO - 02/27/22 17:38:22 - 0:00:26 - Loaded 200000 pre-trained word embeddings.
+INFO - 02/27/22 17:38:49 - 0:00:53 - Loaded 200000 pre-trained word embeddings.
+INFO - 02/27/22 17:38:50 - 0:00:54 - ----> ADVERSARIAL TRAINING <----
+                                     
+                                     
+INFO - 02/27/22 17:38:50 - 0:00:54 - Starting adversarial training epoch 0...
+INFO - 02/27/22 17:38:50 - 0:00:54 - 000000 - Discriminator loss: 0.6773 - 153 samples/s
+INFO - 02/27/22 17:39:10 - 0:01:14 - 002000 - Discriminator loss: 0.6151 - 203 samples/s
+INFO - 02/27/22 17:39:30 - 0:01:34 - 004000 - Discriminator loss: 0.5054 - 200 samples/s
+INFO - 02/27/22 17:39:50 - 0:01:54 - 006000 - Discriminator loss: 0.5269 - 199 samples/s
+INFO - 02/27/22 17:40:11 - 0:02:15 - 008000 - Discriminator loss: 0.5438 - 187 samples/s
+INFO - 02/27/22 17:40:32 - 0:02:36 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 17:40:42 - 0:02:46 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 17:40:42 - 0:02:46 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 17:40:42 - 0:02:46 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 17:40:42 - 0:02:46 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 17:44:40 - 0:06:45 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 17:44:40 - 0:06:45 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 17:44:40 - 0:06:45 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 17:45:34 - 0:07:39 - Building the train dictionary ...
+INFO - 02/27/22 17:45:34 - 0:07:39 - New train dictionary of 1072 pairs.
+INFO - 02/27/22 17:45:34 - 0:07:39 - Mean cosine (nn method, S2T build, 10000 max size): 0.46083
+INFO - 02/27/22 17:53:47 - 0:15:51 - Building the train dictionary ...
+INFO - 02/27/22 17:53:47 - 0:15:51 - New train dictionary of 573 pairs.
+INFO - 02/27/22 17:53:47 - 0:15:51 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.43955
+INFO - 02/27/22 17:54:33 - 0:16:37 - Discriminator source / target predictions: 0.59432 / 0.26859
+INFO - 02/27/22 17:54:33 - 0:16:37 - Discriminator source / target / global accuracy: 0.73261 / 0.87775 / 0.80518
+INFO - 02/27/22 17:54:33 - 0:16:37 - __log__:{"n_epoch": 0, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.46082955598831177, "mean_cosine-csls_knn_10-S2T-10000": 0.4395526051521301, "dis_accu": 0.80518, "dis_src_pred": 0.5943230536352428, "dis_tgt_pred": 0.26859287296082357}
+INFO - 02/27/22 17:54:33 - 0:16:37 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.43955
+INFO - 02/27/22 17:54:33 - 0:16:37 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 17:54:33 - 0:16:37 - End of epoch 0.
+                                     
+                                     
+INFO - 02/27/22 17:54:33 - 0:16:37 - Decreasing learning rate: 0.10000000 -> 0.09800000
+INFO - 02/27/22 17:54:33 - 0:16:37 - Starting adversarial training epoch 1...
+INFO - 02/27/22 17:54:33 - 0:16:37 - 000000 - Discriminator loss: 0.5328 - 153 samples/s
+INFO - 02/27/22 17:54:51 - 0:16:55 - 002000 - Discriminator loss: 0.5297 - 219 samples/s
+INFO - 02/27/22 17:55:09 - 0:17:14 - 004000 - Discriminator loss: 0.5104 - 218 samples/s
+INFO - 02/27/22 17:55:27 - 0:17:32 - 006000 - Discriminator loss: 0.4948 - 221 samples/s
+INFO - 02/27/22 17:55:45 - 0:17:50 - 008000 - Discriminator loss: 0.4851 - 222 samples/s
+INFO - 02/27/22 17:56:04 - 0:18:08 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 17:56:10 - 0:18:14 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 17:56:10 - 0:18:14 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 17:56:10 - 0:18:14 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 17:56:10 - 0:18:14 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 18:00:03 - 0:22:07 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 18:00:03 - 0:22:07 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 18:00:03 - 0:22:07 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 18:00:59 - 0:23:03 - Building the train dictionary ...
+INFO - 02/27/22 18:00:59 - 0:23:03 - New train dictionary of 1010 pairs.
+INFO - 02/27/22 18:00:59 - 0:23:03 - Mean cosine (nn method, S2T build, 10000 max size): 0.48368
+INFO - 02/27/22 18:09:31 - 0:31:35 - Building the train dictionary ...
+INFO - 02/27/22 18:09:31 - 0:31:35 - New train dictionary of 704 pairs.
+INFO - 02/27/22 18:09:31 - 0:31:35 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.45125
+INFO - 02/27/22 18:10:15 - 0:32:19 - Discriminator source / target predictions: 0.71649 / 0.24526
+INFO - 02/27/22 18:10:15 - 0:32:19 - Discriminator source / target / global accuracy: 0.90282 / 0.89616 / 0.89948
+INFO - 02/27/22 18:10:15 - 0:32:19 - __log__:{"n_epoch": 1, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.48368263244628906, "mean_cosine-csls_knn_10-S2T-10000": 0.4512500762939453, "dis_accu": 0.899485, "dis_src_pred": 0.716486726077646, "dis_tgt_pred": 0.2452600047592586}
+INFO - 02/27/22 18:10:15 - 0:32:19 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.45125
+INFO - 02/27/22 18:10:15 - 0:32:19 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 18:10:15 - 0:32:19 - End of epoch 1.
+                                     
+                                     
+INFO - 02/27/22 18:10:15 - 0:32:19 - Decreasing learning rate: 0.09800000 -> 0.09604000
+INFO - 02/27/22 18:10:15 - 0:32:19 - Starting adversarial training epoch 2...
+INFO - 02/27/22 18:10:15 - 0:32:19 - 000000 - Discriminator loss: 0.4500 - 185 samples/s
+INFO - 02/27/22 18:10:33 - 0:32:37 - 002000 - Discriminator loss: 0.4659 - 222 samples/s
+INFO - 02/27/22 18:10:51 - 0:32:55 - 004000 - Discriminator loss: 0.4599 - 227 samples/s
+INFO - 02/27/22 18:11:08 - 0:33:13 - 006000 - Discriminator loss: 0.4525 - 226 samples/s
+INFO - 02/27/22 18:11:29 - 0:33:33 - 008000 - Discriminator loss: 0.4513 - 193 samples/s
+INFO - 02/27/22 18:11:48 - 0:33:52 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 18:11:55 - 0:33:59 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 18:11:55 - 0:33:59 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 18:11:55 - 0:33:59 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 18:11:56 - 0:34:00 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 18:15:52 - 0:37:56 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 18:15:52 - 0:37:56 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 18:15:52 - 0:37:56 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 18:16:52 - 0:38:56 - Building the train dictionary ...
+INFO - 02/27/22 18:16:52 - 0:38:56 - New train dictionary of 1575 pairs.
+INFO - 02/27/22 18:16:52 - 0:38:56 - Mean cosine (nn method, S2T build, 10000 max size): 0.50054
+INFO - 02/27/22 18:25:19 - 0:47:23 - Building the train dictionary ...
+INFO - 02/27/22 18:25:19 - 0:47:23 - New train dictionary of 967 pairs.
+INFO - 02/27/22 18:25:19 - 0:47:23 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.46191
+INFO - 02/27/22 18:26:05 - 0:48:09 - Discriminator source / target predictions: 0.67344 / 0.15870
+INFO - 02/27/22 18:26:05 - 0:48:09 - Discriminator source / target / global accuracy: 0.83047 / 0.96010 / 0.89528
+INFO - 02/27/22 18:26:05 - 0:48:09 - __log__:{"n_epoch": 2, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.500535249710083, "mean_cosine-csls_knn_10-S2T-10000": 0.4619128704071045, "dis_accu": 0.895285, "dis_src_pred": 0.6734355844136142, "dis_tgt_pred": 0.15870006627994648}
+INFO - 02/27/22 18:26:05 - 0:48:09 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.46191
+INFO - 02/27/22 18:26:05 - 0:48:09 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 18:26:05 - 0:48:09 - End of epoch 2.
+                                     
+                                     
+INFO - 02/27/22 18:26:05 - 0:48:09 - Decreasing learning rate: 0.09604000 -> 0.09411920
+INFO - 02/27/22 18:26:05 - 0:48:09 - Starting adversarial training epoch 3...
+INFO - 02/27/22 18:26:05 - 0:48:09 - 000000 - Discriminator loss: 0.4445 - 163 samples/s
+INFO - 02/27/22 18:26:25 - 0:48:30 - 002000 - Discriminator loss: 0.4415 - 198 samples/s
+INFO - 02/27/22 18:26:44 - 0:48:48 - 004000 - Discriminator loss: 0.4312 - 212 samples/s
+INFO - 02/27/22 18:27:03 - 0:49:07 - 006000 - Discriminator loss: 0.4307 - 210 samples/s
+INFO - 02/27/22 18:27:21 - 0:49:25 - 008000 - Discriminator loss: 0.4267 - 220 samples/s
+INFO - 02/27/22 18:27:40 - 0:49:44 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 18:27:47 - 0:49:51 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 18:27:47 - 0:49:51 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 18:27:47 - 0:49:51 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 18:27:47 - 0:49:51 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 18:31:35 - 0:53:39 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 18:31:35 - 0:53:39 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 18:31:35 - 0:53:39 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 18:32:30 - 0:54:34 - Building the train dictionary ...
+INFO - 02/27/22 18:32:30 - 0:54:34 - New train dictionary of 2270 pairs.
+INFO - 02/27/22 18:32:30 - 0:54:34 - Mean cosine (nn method, S2T build, 10000 max size): 0.51450
+INFO - 02/27/22 18:40:51 - 1:02:55 - Building the train dictionary ...
+INFO - 02/27/22 18:40:51 - 1:02:55 - New train dictionary of 1234 pairs.
+INFO - 02/27/22 18:40:51 - 1:02:55 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.48601
+INFO - 02/27/22 18:41:42 - 1:03:46 - Discriminator source / target predictions: 0.77552 / 0.15750
+INFO - 02/27/22 18:41:42 - 1:03:46 - Discriminator source / target / global accuracy: 0.95232 / 0.95959 / 0.95596
+INFO - 02/27/22 18:41:42 - 1:03:46 - __log__:{"n_epoch": 3, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.5144988298416138, "mean_cosine-csls_knn_10-S2T-10000": 0.48601019382476807, "dis_accu": 0.9559575, "dis_src_pred": 0.775518528584689, "dis_tgt_pred": 0.1575001898937396}
+INFO - 02/27/22 18:41:42 - 1:03:46 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.48601
+INFO - 02/27/22 18:41:42 - 1:03:46 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 18:41:42 - 1:03:46 - End of epoch 3.
+                                     
+                                     
+INFO - 02/27/22 18:41:42 - 1:03:46 - Decreasing learning rate: 0.09411920 -> 0.09223682
+INFO - 02/27/22 18:41:42 - 1:03:46 - Starting adversarial training epoch 4...
+INFO - 02/27/22 18:41:42 - 1:03:47 - 000000 - Discriminator loss: 0.4182 - 167 samples/s
+INFO - 02/27/22 18:42:01 - 1:04:06 - 002000 - Discriminator loss: 0.4215 - 210 samples/s
+INFO - 02/27/22 18:42:21 - 1:04:25 - 004000 - Discriminator loss: 0.4164 - 202 samples/s
+INFO - 02/27/22 18:42:41 - 1:04:45 - 006000 - Discriminator loss: 0.4128 - 203 samples/s
+INFO - 02/27/22 18:42:59 - 1:05:03 - 008000 - Discriminator loss: 0.4125 - 218 samples/s
+INFO - 02/27/22 18:43:22 - 1:05:26 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 18:43:30 - 1:05:35 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 18:43:30 - 1:05:35 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 18:43:30 - 1:05:35 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 18:43:31 - 1:05:35 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 18:47:18 - 1:09:22 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 18:47:18 - 1:09:22 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 18:47:18 - 1:09:22 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 18:48:13 - 1:10:17 - Building the train dictionary ...
+INFO - 02/27/22 18:48:13 - 1:10:17 - New train dictionary of 2432 pairs.
+INFO - 02/27/22 18:48:13 - 1:10:17 - Mean cosine (nn method, S2T build, 10000 max size): 0.51582
+INFO - 02/27/22 18:56:25 - 1:18:29 - Building the train dictionary ...
+INFO - 02/27/22 18:56:25 - 1:18:29 - New train dictionary of 1399 pairs.
+INFO - 02/27/22 18:56:25 - 1:18:29 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.49039
+INFO - 02/27/22 18:57:06 - 1:19:10 - Discriminator source / target predictions: 0.78217 / 0.14682
+INFO - 02/27/22 18:57:06 - 1:19:10 - Discriminator source / target / global accuracy: 0.94283 / 0.95740 / 0.95012
+INFO - 02/27/22 18:57:06 - 1:19:10 - __log__:{"n_epoch": 4, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.5158210396766663, "mean_cosine-csls_knn_10-S2T-10000": 0.4903908371925354, "dis_accu": 0.9501175, "dis_src_pred": 0.7821654942112416, "dis_tgt_pred": 0.1468175392037205}
+INFO - 02/27/22 18:57:06 - 1:19:10 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.49039
+INFO - 02/27/22 18:57:06 - 1:19:10 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 18:57:06 - 1:19:10 - End of epoch 4.
+                                     
+                                     
+INFO - 02/27/22 18:57:06 - 1:19:10 - Decreasing learning rate: 0.09223682 -> 0.09039208
+INFO - 02/27/22 18:57:06 - 1:19:10 - ----> ITERATIVE PROCRUSTES REFINEMENT <----
+                                     
+                                     
+INFO - 02/27/22 18:57:06 - 1:19:10 - * Reloading the best model from C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 18:57:06 - 1:19:11 - Starting refinement iteration 0...
+INFO - 02/27/22 18:57:07 - 1:19:11 - Building the train dictionary ...
+INFO - 02/27/22 19:01:22 - 1:23:26 - New train dictionary of 2271 pairs.
+INFO - 02/27/22 19:01:23 - 1:23:27 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 19:01:30 - 1:23:35 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 19:01:30 - 1:23:35 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 19:01:30 - 1:23:35 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 19:01:31 - 1:23:35 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 19:05:13 - 1:27:17 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 19:05:13 - 1:27:17 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 19:05:13 - 1:27:17 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 19:06:07 - 1:28:11 - Building the train dictionary ...
+INFO - 02/27/22 19:06:07 - 1:28:11 - New train dictionary of 4502 pairs.
+INFO - 02/27/22 19:06:07 - 1:28:11 - Mean cosine (nn method, S2T build, 10000 max size): 0.50867
+INFO - 02/27/22 19:14:14 - 1:36:18 - Building the train dictionary ...
+INFO - 02/27/22 19:14:14 - 1:36:18 - New train dictionary of 2707 pairs.
+INFO - 02/27/22 19:14:14 - 1:36:18 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.51948
+INFO - 02/27/22 19:14:14 - 1:36:18 - __log__:{"n_iter": 0, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.5086683630943298, "mean_cosine-csls_knn_10-S2T-10000": 0.5194787979125977}
+INFO - 02/27/22 19:14:14 - 1:36:18 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.51948
+INFO - 02/27/22 19:14:14 - 1:36:18 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 19:14:14 - 1:36:18 - End of refinement iteration 0.
+                                     
+                                     
+INFO - 02/27/22 19:14:14 - 1:36:18 - Starting refinement iteration 1...
+INFO - 02/27/22 19:14:15 - 1:36:19 - Building the train dictionary ...
+INFO - 02/27/22 19:18:34 - 1:40:39 - New train dictionary of 4839 pairs.
+INFO - 02/27/22 19:18:36 - 1:40:40 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 19:18:42 - 1:40:46 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 19:18:42 - 1:40:46 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 19:18:42 - 1:40:46 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 19:18:42 - 1:40:46 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 19:22:23 - 1:44:27 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 19:22:23 - 1:44:27 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 19:22:23 - 1:44:27 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 19:23:17 - 1:45:21 - Building the train dictionary ...
+INFO - 02/27/22 19:23:17 - 1:45:21 - New train dictionary of 5012 pairs.
+INFO - 02/27/22 19:23:17 - 1:45:21 - Mean cosine (nn method, S2T build, 10000 max size): 0.52362
+INFO - 02/27/22 19:31:35 - 1:53:39 - Building the train dictionary ...
+INFO - 02/27/22 19:31:35 - 1:53:39 - New train dictionary of 3337 pairs.
+INFO - 02/27/22 19:31:35 - 1:53:39 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.53348
+INFO - 02/27/22 19:31:35 - 1:53:39 - __log__:{"n_iter": 1, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.52361661195755, "mean_cosine-csls_knn_10-S2T-10000": 0.5334759950637817}
+INFO - 02/27/22 19:31:35 - 1:53:39 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.53348
+INFO - 02/27/22 19:31:35 - 1:53:39 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 19:31:35 - 1:53:39 - End of refinement iteration 1.
+                                     
+                                     
+INFO - 02/27/22 19:31:35 - 1:53:39 - Starting refinement iteration 2...
+INFO - 02/27/22 19:31:36 - 1:53:40 - Building the train dictionary ...
+INFO - 02/27/22 19:35:58 - 1:58:03 - New train dictionary of 6161 pairs.
+INFO - 02/27/22 19:35:59 - 1:58:04 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 19:36:06 - 1:58:10 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 19:36:06 - 1:58:10 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 19:36:06 - 1:58:10 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 19:36:06 - 1:58:10 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 19:39:47 - 2:01:51 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 19:39:47 - 2:01:51 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 19:39:47 - 2:01:51 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 19:40:41 - 2:02:46 - Building the train dictionary ...
+INFO - 02/27/22 19:40:41 - 2:02:46 - New train dictionary of 5255 pairs.
+INFO - 02/27/22 19:40:41 - 2:02:46 - Mean cosine (nn method, S2T build, 10000 max size): 0.52942
+INFO - 02/27/22 19:48:49 - 2:10:53 - Building the train dictionary ...
+INFO - 02/27/22 19:48:49 - 2:10:53 - New train dictionary of 3560 pairs.
+INFO - 02/27/22 19:48:49 - 2:10:53 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.54199
+INFO - 02/27/22 19:48:49 - 2:10:53 - __log__:{"n_iter": 2, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.5294155478477478, "mean_cosine-csls_knn_10-S2T-10000": 0.5419905185699463}
+INFO - 02/27/22 19:48:49 - 2:10:53 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.54199
+INFO - 02/27/22 19:48:49 - 2:10:53 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 19:48:49 - 2:10:53 - End of refinement iteration 2.
+                                     
+                                     
+INFO - 02/27/22 19:48:49 - 2:10:53 - Starting refinement iteration 3...
+INFO - 02/27/22 19:48:50 - 2:10:54 - Building the train dictionary ...
+INFO - 02/27/22 19:53:04 - 2:15:08 - New train dictionary of 6682 pairs.
+INFO - 02/27/22 19:53:05 - 2:15:09 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 19:53:11 - 2:15:15 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 19:53:11 - 2:15:15 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 19:53:11 - 2:15:15 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 19:53:12 - 2:15:16 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 19:56:48 - 2:18:52 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 19:56:48 - 2:18:52 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 19:56:48 - 2:18:52 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 19:57:40 - 2:19:44 - Building the train dictionary ...
+INFO - 02/27/22 19:57:40 - 2:19:44 - New train dictionary of 5378 pairs.
+INFO - 02/27/22 19:57:40 - 2:19:44 - Mean cosine (nn method, S2T build, 10000 max size): 0.53452
+INFO - 02/27/22 20:05:37 - 2:27:41 - Building the train dictionary ...
+INFO - 02/27/22 20:05:37 - 2:27:41 - New train dictionary of 3739 pairs.
+INFO - 02/27/22 20:05:37 - 2:27:41 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.54621
+INFO - 02/27/22 20:05:37 - 2:27:41 - __log__:{"n_iter": 3, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.534515917301178, "mean_cosine-csls_knn_10-S2T-10000": 0.5462114214897156}
+INFO - 02/27/22 20:05:37 - 2:27:41 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.54621
+INFO - 02/27/22 20:05:37 - 2:27:41 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 20:05:37 - 2:27:41 - End of refinement iteration 3.
+                                     
+                                     
+INFO - 02/27/22 20:05:37 - 2:27:41 - Starting refinement iteration 4...
+INFO - 02/27/22 20:05:37 - 2:27:42 - Building the train dictionary ...
+INFO - 02/27/22 20:09:47 - 2:31:51 - New train dictionary of 7039 pairs.
+INFO - 02/27/22 20:09:48 - 2:31:52 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 20:09:54 - 2:31:58 - 1500 source words - nn - Precision at k = 1: 0.000000
+INFO - 02/27/22 20:09:54 - 2:31:58 - 1500 source words - nn - Precision at k = 5: 0.000000
+INFO - 02/27/22 20:09:54 - 2:31:58 - 1500 source words - nn - Precision at k = 10: 0.000000
+INFO - 02/27/22 20:09:54 - 2:31:58 - Found 2447 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/27/22 20:13:42 - 2:35:46 - 1500 source words - csls_knn_10 - Precision at k = 1: 0.000000
+INFO - 02/27/22 20:13:42 - 2:35:46 - 1500 source words - csls_knn_10 - Precision at k = 5: 0.000000
+INFO - 02/27/22 20:13:42 - 2:35:46 - 1500 source words - csls_knn_10 - Precision at k = 10: 0.000000
+INFO - 02/27/22 20:14:37 - 2:36:41 - Building the train dictionary ...
+INFO - 02/27/22 20:14:37 - 2:36:41 - New train dictionary of 5512 pairs.
+INFO - 02/27/22 20:14:37 - 2:36:41 - Mean cosine (nn method, S2T build, 10000 max size): 0.53664
+INFO - 02/27/22 20:22:56 - 2:45:00 - Building the train dictionary ...
+INFO - 02/27/22 20:22:56 - 2:45:00 - New train dictionary of 3843 pairs.
+INFO - 02/27/22 20:22:56 - 2:45:00 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.54926
+INFO - 02/27/22 20:22:56 - 2:45:00 - __log__:{"n_iter": 4, "precision_at_1-nn": 0.0, "precision_at_5-nn": 0.0, "precision_at_10-nn": 0.0, "precision_at_1-csls_knn_10": 0.0, "precision_at_5-csls_knn_10": 0.0, "precision_at_10-csls_knn_10": 0.0, "mean_cosine-nn-S2T-10000": 0.5366396307945251, "mean_cosine-csls_knn_10-S2T-10000": 0.5492585301399231}
+INFO - 02/27/22 20:22:56 - 2:45:00 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.54926
+INFO - 02/27/22 20:22:56 - 2:45:00 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 20:22:56 - 2:45:00 - End of refinement iteration 4.
+                                     
+                                     
+INFO - 02/27/22 20:22:56 - 2:45:00 - * Reloading the best model from C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\best_mapping.pth ...
+INFO - 02/27/22 20:22:56 - 2:45:00 - Reloading all embeddings for mapping ...
+INFO - 02/27/22 20:23:17 - 2:45:22 - Loaded 200000 pre-trained word embeddings.
+INFO - 02/27/22 20:23:40 - 2:45:44 - Loaded 200000 pre-trained word embeddings.
+INFO - 02/27/22 20:23:41 - 2:45:45 - Map source embeddings to the target space ...
+INFO - 02/27/22 20:23:41 - 2:45:45 - Writing source embeddings to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\vectors-en.txt ...
+INFO - 02/27/22 20:25:31 - 2:47:35 - Writing target embeddings to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\co3ayay5kx\vectors-ru.txt ...

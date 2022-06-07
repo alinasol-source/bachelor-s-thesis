@@ -1,0 +1,80 @@
+INFO - 02/26/22 18:10:24 - 0:00:00 - ============ Initialized logger ============
+INFO - 02/26/22 18:10:24 - 0:00:00 - cuda: False
+                                     dico_build: S2T&T2S
+                                     dico_eval: default
+                                     dico_max_rank: 10000
+                                     dico_max_size: 0
+                                     dico_method: csls_knn_10
+                                     dico_min_size: 0
+                                     dico_threshold: 0
+                                     dico_train: identical_char
+                                     emb_dim: 300
+                                     exp_id: 
+                                     exp_name: debug
+                                     exp_path: C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\d1fuvmd6oz
+                                     export: txt
+                                     max_vocab: 200000
+                                     n_refinement: 1
+                                     normalize_embeddings: 
+                                     seed: -1
+                                     src_emb: MUSE/data/wiki.de.vec
+                                     src_lang: de
+                                     tgt_emb: MUSE/data/wiki.pt.vec
+                                     tgt_lang: pt
+                                     verbose: 2
+INFO - 02/26/22 18:10:24 - 0:00:00 - The experiment will be stored in C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\d1fuvmd6oz
+INFO - 02/26/22 18:10:49 - 0:00:26 - Loaded 200000 pre-trained word embeddings.
+INFO - 02/26/22 18:11:15 - 0:00:52 - Loaded 200000 pre-trained word embeddings.
+INFO - 02/26/22 18:11:16 - 0:00:53 - Found 57939 pairs of identical character strings.
+INFO - 02/26/22 18:11:17 - 0:00:54 - Validation metric: mean_cosine-csls_knn_10-S2T-10000
+INFO - 02/26/22 18:11:17 - 0:00:54 - Starting iteration 0...
+INFO - 02/26/22 18:11:19 - 0:00:55 - Found 1513 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/26/22 18:11:25 - 0:01:01 - 1500 source words - nn - Precision at k = 1: 51.200000
+INFO - 02/26/22 18:11:25 - 0:01:01 - 1500 source words - nn - Precision at k = 5: 68.466667
+INFO - 02/26/22 18:11:25 - 0:01:01 - 1500 source words - nn - Precision at k = 10: 74.000000
+INFO - 02/26/22 18:11:25 - 0:01:01 - Found 1513 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/26/22 18:16:52 - 0:06:28 - 1500 source words - csls_knn_10 - Precision at k = 1: 60.933333
+INFO - 02/26/22 18:16:52 - 0:06:28 - 1500 source words - csls_knn_10 - Precision at k = 5: 77.466667
+INFO - 02/26/22 18:16:52 - 0:06:28 - 1500 source words - csls_knn_10 - Precision at k = 10: 81.333333
+INFO - 02/26/22 18:17:59 - 0:07:35 - Building the train dictionary ...
+INFO - 02/26/22 18:17:59 - 0:07:35 - New train dictionary of 5256 pairs.
+INFO - 02/26/22 18:17:59 - 0:07:35 - Mean cosine (nn method, S2T build, 10000 max size): 0.60299
+INFO - 02/26/22 18:29:23 - 0:19:00 - Building the train dictionary ...
+INFO - 02/26/22 18:29:23 - 0:19:00 - New train dictionary of 5715 pairs.
+INFO - 02/26/22 18:29:23 - 0:19:00 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.58982
+INFO - 02/26/22 18:29:23 - 0:19:00 - __log__:{"n_iter": 0, "precision_at_1-nn": 51.2, "precision_at_5-nn": 68.46666666666667, "precision_at_10-nn": 74.0, "precision_at_1-csls_knn_10": 60.93333333333333, "precision_at_5-csls_knn_10": 77.46666666666667, "precision_at_10-csls_knn_10": 81.33333333333333, "mean_cosine-nn-S2T-10000": 0.6029888987541199, "mean_cosine-csls_knn_10-S2T-10000": 0.5898152589797974}
+INFO - 02/26/22 18:29:23 - 0:19:00 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.58982
+INFO - 02/26/22 18:29:23 - 0:19:00 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\d1fuvmd6oz\best_mapping.pth ...
+INFO - 02/26/22 18:29:23 - 0:19:00 - End of iteration 0.
+                                     
+                                     
+INFO - 02/26/22 18:29:23 - 0:19:00 - Starting iteration 1...
+INFO - 02/26/22 18:29:24 - 0:19:01 - Building the train dictionary ...
+INFO - 02/26/22 18:39:47 - 0:29:23 - New train dictionary of 3514 pairs.
+INFO - 02/26/22 18:39:48 - 0:29:25 - Found 1513 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/26/22 18:39:56 - 0:29:32 - 1500 source words - nn - Precision at k = 1: 49.933333
+INFO - 02/26/22 18:39:56 - 0:29:32 - 1500 source words - nn - Precision at k = 5: 68.000000
+INFO - 02/26/22 18:39:56 - 0:29:32 - 1500 source words - nn - Precision at k = 10: 72.733333
+INFO - 02/26/22 18:39:56 - 0:29:32 - Found 1513 pairs of words in the dictionary (1500 unique). 0 other pairs contained at least one unknown word (0 in lang1, 0 in lang2)
+INFO - 02/26/22 18:44:49 - 0:34:25 - 1500 source words - csls_knn_10 - Precision at k = 1: 58.933333
+INFO - 02/26/22 18:44:49 - 0:34:25 - 1500 source words - csls_knn_10 - Precision at k = 5: 76.333333
+INFO - 02/26/22 18:44:49 - 0:34:25 - 1500 source words - csls_knn_10 - Precision at k = 10: 80.066667
+INFO - 02/26/22 18:46:10 - 0:35:46 - Building the train dictionary ...
+INFO - 02/26/22 18:46:10 - 0:35:46 - New train dictionary of 6759 pairs.
+INFO - 02/26/22 18:46:10 - 0:35:46 - Mean cosine (nn method, S2T build, 10000 max size): 0.68057
+INFO - 02/26/22 18:55:27 - 0:45:03 - Building the train dictionary ...
+INFO - 02/26/22 18:55:27 - 0:45:03 - New train dictionary of 6426 pairs.
+INFO - 02/26/22 18:55:27 - 0:45:03 - Mean cosine (csls_knn_10 method, S2T build, 10000 max size): 0.68163
+INFO - 02/26/22 18:55:27 - 0:45:03 - __log__:{"n_iter": 1, "precision_at_1-nn": 49.93333333333334, "precision_at_5-nn": 68.0, "precision_at_10-nn": 72.73333333333333, "precision_at_1-csls_knn_10": 58.93333333333334, "precision_at_5-csls_knn_10": 76.33333333333333, "precision_at_10-csls_knn_10": 80.06666666666666, "mean_cosine-nn-S2T-10000": 0.6805657148361206, "mean_cosine-csls_knn_10-S2T-10000": 0.6816278696060181}
+INFO - 02/26/22 18:55:27 - 0:45:03 - * Best value for "mean_cosine-csls_knn_10-S2T-10000": 0.68163
+INFO - 02/26/22 18:55:27 - 0:45:03 - * Saving the mapping to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\d1fuvmd6oz\best_mapping.pth ...
+INFO - 02/26/22 18:55:27 - 0:45:03 - End of iteration 1.
+                                     
+                                     
+INFO - 02/26/22 18:55:27 - 0:45:03 - * Reloading the best model from C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\d1fuvmd6oz\best_mapping.pth ...
+INFO - 02/26/22 18:55:27 - 0:45:03 - Reloading all embeddings for mapping ...
+INFO - 02/26/22 18:55:48 - 0:45:24 - Loaded 200000 pre-trained word embeddings.
+INFO - 02/26/22 18:56:10 - 0:45:47 - Loaded 200000 pre-trained word embeddings.
+INFO - 02/26/22 18:56:11 - 0:45:47 - Map source embeddings to the target space ...
+INFO - 02/26/22 18:56:11 - 0:45:48 - Writing source embeddings to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\d1fuvmd6oz\vectors-de.txt ...
+INFO - 02/26/22 18:58:09 - 0:47:46 - Writing target embeddings to C:\Users\79648\Desktop\thesis\MUSE\dumped\debug\d1fuvmd6oz\vectors-pt.txt ...
